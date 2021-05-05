@@ -1128,13 +1128,15 @@ h1 {
   font-size: 36px;
   text-align: center;
   margin: 3em 0;
+  font-weight: 200;
 }
 
 h2 {
   font-family: "Varela Round", sans-serif;
   color: #698F5D;
-  font-size: 25px;
-  margin: 2em 0;
+  font-size: 2.5em;
+  padding: 1.5em 0;
+  font-weight: 200;
 }
 
 h3 {
@@ -1181,6 +1183,65 @@ a {
 .list_style li {
   list-style: disc;
   font-size: 16pt;
+}
+
+/* Alignments */
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+/* Background colour classes */
+.bg_primary_green {
+  background-color: #698F5D;
+}
+
+.bg_dark_green {
+  background-color: #355D3A;
+}
+
+.bg_light_green {
+  background-color: #A0B58A;
+}
+
+.bg_dark_grey {
+  background-color: #393738;
+}
+
+.bg_light_grey {
+  background-color: #EEECDF;
+}
+
+/* Text colours */
+.colour_white {
+  color: white;
+}
+
+.colour_primary_green {
+  color: #698F5D;
+}
+
+.colour_light_green {
+  color: #A0B58A;
+}
+
+.colour_dark_green {
+  color: #355D3A;
+}
+
+.colour_light_grey {
+  color: #EEECDF;
+}
+
+.colour_dark_grey {
+  color: #393738;
 }
 
 .btn {
