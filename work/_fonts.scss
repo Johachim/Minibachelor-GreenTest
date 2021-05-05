@@ -1,0 +1,65 @@
+/*Text styles*/
+/* Heading styles */
+h1 {
+	font-family: $heading;
+	font-size: 36px;
+	text-align: center;
+	margin: 3em 0;
+}
+
+h2 {
+	font-family: $heading;
+    color: $primary_green;
+	font-size: 25px;
+	margin: 2em 0;
+}
+
+h3 {
+	font-family: $heading;
+	font-size: 20px;
+}
+
+h4 {
+	font-family: $heading;
+	font-size: 1.3em;
+}
+
+h5 {
+	font-family: $paragraph;
+	font-size: 1.3em;
+}
+
+h6 {
+	font-family: $heading;
+	font-size: 1em;
+}
+
+/* Paragraph styles */
+p {
+	font-family: $paragraph;
+	font-size: 12pt;
+	line-height: 2em;
+}
+
+
+/* Links styles */
+a {
+	text-decoration: none;
+	font-family: $paragraph;
+    color: $primary_green;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+/* List styles */
+.list_style {
+	padding-left: 30px;
+}
+.list_style li {
+	list-style: disc;
+	font-size: 16pt;
+}
