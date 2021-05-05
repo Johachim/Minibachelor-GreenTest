@@ -1132,7 +1132,7 @@ h1 {
 
 h2 {
   font-family: "Varela Round", sans-serif;
-  color: #355D3A;
+  color: #698F5D;
   font-size: 25px;
   margin: 2em 0;
 }
@@ -1168,13 +1168,9 @@ p {
 a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  color: #355D3A;
+  color: #698F5D;
   font-weight: 600;
   font-size: 1em;
-}
-
-a:hover {
-  opacity: 0.6;
 }
 
 /* List styles */
@@ -1188,14 +1184,46 @@ a:hover {
 }
 
 .btn {
-  padding: 1em 1.5em;
-  font-family: "Varela Round", sans-serif;
-  font-size: 1.5em;
-  border-radius: 25px;
+  padding: 0.7em 3em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 .btn_green {
-  background-color: #355D3A;
+  background-color: #698F5D;
   color: white;
+  border: none;
+}
+
+.btn_green:hover {
+  background-color: #A0B58A;
+}
+
+.btn_light_green {
+  background-color: #A0B58A;
+  color: white;
+  border: none;
+}
+
+.btn_light_green:hover {
+  background-color: #698F5D;
+}
+
+.btn_quiz_answer {
+  border: solid #393738 2px;
+  color: #393738;
+  background: none;
+}
+
+.btn_quiz_answer:hover {
+  color: white;
+  background-color: #355D3A;
+  border: solid #355D3A 2px;
 }
 /*# sourceMappingURL=master-style.css.map */

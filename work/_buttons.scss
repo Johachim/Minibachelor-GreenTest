@@ -1,11 +1,43 @@
 .btn{
-    padding: 1em 1.5em;
-    font-family: $heading;
-    font-size: 1.5em;
-    border-radius: 25px;
+    padding: 0.7em 3em;
+    font-family: $paragraph;
+    font-weight: 500;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 1;
 }
 
 .btn_green{
     background-color: $primary_green;
     color: white;
+    border: none;
+}
+
+.btn_green:hover{
+    background-color: $light_green;
+}
+
+.btn_light_green{
+    background-color: $light_green;
+    color: white;
+    border: none;
+}
+
+.btn_light_green:hover{
+    background-color: $primary_green;
+}
+
+.btn_quiz_answer{
+    border: solid $dark_grey 2px;
+    color: $dark_grey;
+    background: none;
+}
+
+.btn_quiz_answer:hover{
+    color: white;
+    background-color: $dark_green;
+    border: solid $dark_green 2px;
 }
