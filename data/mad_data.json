@@ -1,0 +1,399 @@
+[
+    {
+        "navn": "Oksekød",
+        "klimaftryk": 14.1,
+        "import": 0.2,
+        "kategori": "Kød"
+    },
+    {
+        "navn": "Svinekød",
+        "klimaftryk": 4.8,
+        "import": 0.2,
+        "kategori": "Kød"
+    },
+    {
+        "navn": "Kylling, hel fersk",
+        "klimaftryk": 3.4,
+        "import": 0.2,
+        "kategori": "Kød"
+    },
+    {
+        "navn": "Kylling, hel frossen",
+        "klimaftryk": 3.9,
+        "import": 0.2,
+        "kategori": "Kød"
+    },
+    {
+        "navn": "Kyllingekød",
+        "klimaftryk": 5.7,
+        "import": 0.2,
+        "kategori": "Kød"
+    },
+    {
+        "navn": "Lammekød",
+        "klimaftryk": 21.6,
+        "import": 0.2,
+        "kategori": "Kød"
+    },
+    {
+        "navn": "Skummetmælk",
+        "klimaftryk": 1.1,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Letmælk",
+        "klimaftryk": 1.2,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Sødmælk",
+        "klimaftryk": 1.4,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Yoghurt",
+        "klimaftryk": 1.5,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Creme fraiche, 18 %",
+        "klimaftryk": 3.3,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Creme fraiche, 38 %",
+        "klimaftryk": 5.4,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Fløde, 38 % ",
+        "klimaftryk": 5.5,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Madlavningsfløde, 9 %",
+        "klimaftryk": 2.7,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Brie",
+        "klimaftryk": 8.4,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Gul ost, lav fedt (17 %)",
+        "klimaftryk": 9,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Gul ost (31 %)",
+        "klimaftryk": 9.8,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Feta (20 % fedt)",
+        "klimaftryk": 1,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Flødeost",
+        "klimaftryk": 6.8,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Hytteost",
+        "klimaftryk": 3.7,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Flødeis",
+        "klimaftryk": 3,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Æg",
+        "klimaftryk": 2.2,
+        "import": 0.2,
+        "kategori": "Mejeriprodukter og æg"
+    },
+    {
+        "navn": "Smør",
+        "klimaftryk": 10.8,
+        "import": 0.2,
+        "kategori": "Smør og fedtstoffer"
+    },
+    {
+        "navn": "Smørbart blandingsprodukt ",
+        "klimaftryk": 7.3,
+        "import": 0.3,
+        "kategori": "Smør og fedtstoffer"
+    },
+    {
+        "navn": "Margarine",
+        "klimaftryk": 1.9,
+        "import": 0.3,
+        "kategori": "Smør og fedtstoffer"
+    },
+    {
+        "navn": "Rapsolie",
+        "klimaftryk": 2,
+        "import": 0.2,
+        "kategori": "Smør og fedtstoffer"
+    },
+    {
+        "navn": "Ørred, filet, frossen",
+        "klimaftryk": 4.7,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Torsk, filet",
+        "klimaftryk": 3,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Torsk, filet, frossen",
+        "klimaftryk": 3.4,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Fladfisk, filet",
+        "klimaftryk": 7.6,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Fladfisk, filet, frossen",
+        "klimaftryk": 8,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Sild, filet",
+        "klimaftryk": 1.5,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Sild, filet, frossen",
+        "klimaftryk": 2,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Rejer, ferske",
+        "klimaftryk": 3.2,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Rejer, pillede, frosne",
+        "klimaftryk": 10.7,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Muslinger",
+        "klimaftryk": 0.3,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Hummer",
+        "klimaftryk": 20.4,
+        "import": 0.2,
+        "kategori": "Fisk og skaldyr"
+    },
+    {
+        "navn": "Tomat og agurk, danske",
+        "klimaftryk": 0.8,
+        "import": 0,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Tomat og agurk, udenlandske",
+        "klimaftryk": 0.6,
+        "import": 0,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Løg",
+        "klimaftryk": 0.6,
+        "import": 0.2,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Gulerod",
+        "klimaftryk": 0.4,
+        "import": 0.2,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Kartoffel",
+        "klimaftryk": 0.4,
+        "import": 0.2,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Hvidkål og rødkål",
+        "klimaftryk": 0.5,
+        "import": 0.2,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Sojabønner",
+        "klimaftryk": 0.6,
+        "import": 0,
+        "kategori": "Grøntsager"
+    },
+    {
+        "navn": "Æbler og pærer, danske i sæson",
+        "klimaftryk": 0.1,
+        "import": 0,
+        "kategori": "Frugt"
+    },
+    {
+        "navn": "Æbler og pærer, import",
+        "klimaftryk": 0.4,
+        "import": 0,
+        "kategori": "Frugt"
+    },
+    {
+        "navn": "Appelsiner",
+        "klimaftryk": 0.6,
+        "import": 0,
+        "kategori": "Frugt"
+    },
+    {
+        "navn": "Bananer",
+        "klimaftryk": 0.5,
+        "import": 0,
+        "kategori": "Frugt"
+    },
+    {
+        "navn": "Rugbrød, frisk",
+        "klimaftryk": 0.8,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Hvedebrød, frisk",
+        "klimaftryk": 0.8,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Hvedebrød, frossen",
+        "klimaftryk": 1.2,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Havregryn",
+        "klimaftryk": 0.8,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Hvedemel",
+        "klimaftryk": 1.2,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Rugmel",
+        "klimaftryk": 1,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Ris",
+        "klimaftryk": 3.3,
+        "import": 0,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Pasta",
+        "klimaftryk": 1.2,
+        "import": 0.2,
+        "kategori": "Korn og kornprodukter"
+    },
+    {
+        "navn": "Kaffe",
+        "klimaftryk": 0.3,
+        "import": 0,
+        "kategori": "Drikkevarer"
+    },
+    {
+        "navn": "Appelsinjuice",
+        "klimaftryk": 1.3,
+        "import": 0,
+        "kategori": "Drikkevarer"
+    },
+    {
+        "navn": "Vand på flaske",
+        "klimaftryk": 0.1,
+        "import": 0.1,
+        "kategori": "Drikkevarer"
+    },
+    {
+        "navn": "Øl",
+        "klimaftryk": 1,
+        "import": 0.1,
+        "kategori": "Drikkevarer"
+    },
+    {
+        "navn": "Vin",
+        "klimaftryk": 2.4,
+        "import": 0,
+        "kategori": "Drikkevarer"
+    },
+    {
+        "navn": "Sukker",
+        "klimaftryk": 1,
+        "import": 0.2,
+        "kategori": "Andet"
+    },
+    {
+        "navn": "Slik",
+        "klimaftryk": 2.3,
+        "import": 0.2,
+        "kategori": "Andet"
+    },
+    {
+        "navn": "Chokolade, mørk",
+        "klimaftryk": 0.9,
+        "import": 0,
+        "kategori": "Andet"
+    },
+    {
+        "navn": "Chokolade, lys",
+        "klimaftryk": 2.7,
+        "import": 0,
+        "kategori": "Andet"
+    },
+    {
+        "navn": "Tomatketchup",
+        "klimaftryk": 1.2,
+        "import": 0.2,
+        "kategori": "Andet"
+    }
+    
+]
