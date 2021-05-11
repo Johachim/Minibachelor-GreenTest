@@ -1,10 +1,63 @@
-const quizQuestions = [
-    {
-        question: "Bruger du primært en El bil eller en benzin/diesel bil (den bil der bruges oftest om du bliver kørt eller kører)?",
-        answers: {
-            a: "Benzin",
-            b: "Diesel",
-            c: "El"
+    buildQuiz = () => {
+        const output = [];
+        
+        quizQuestions.forEach((currentQuestion, questionNumber) => {
+            const answers = [];
+            
+            for(letter in currentQuestion.answers){
+                answers.push(`
+                <label>
+                <input type="radio" name="question${questionNumber}" value="${letter}">
+                ${letter} :
+                ${currentQuestion.answers[letter]}
+                </label>`)
+            }
+            output.push(`
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join('')} </div>`);
+        }
+        
+        );
+        
+        quizContainer.innerHTML = output.join('');
+        
+    }
+    
+    showResults = () => {
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+        
+        let numCorrect = 0;
+        
+        quizQuestions.forEach( (currentQuestion, questionNumber) => {
+
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+            
+            if(userAnswer === currentQuestion.correctAnswer){
+                //how to display "correct" answers?
+                numCorrect++;
+                
+                answerContainers[questionNumber].style.color = "green";
+            }
+            else{
+                answerContainers[questionNumber].style.color = "lightgrey";
+            }
+        });
+        //what to do with answers?
+        resultsContainer.innerHTML = `Answers:...${numCorrect}`
+    }
+    
+    const quizContainer = document.getElementById('quizdiv');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    const quizQuestions = [
+        {
+            question: "Bruger du primært en El bil eller en benzin/diesel bil (den bil der bruges oftest om du bliver kørt eller kører)?",
+            answers: {
+                a: "Benzin",
+                b: "Diesel",
+                c: "El"
         },
         correctAnswer: "c"
     },
@@ -40,19 +93,7 @@ const quizQuestions = [
     }
 ];
 
-const quizContainer = document.querySelector(".quiz");
-const resultsContainer = document.querySelector(".results")
-const submitButton = document.querySelector(".submit")
-
-buildQuiz = () => {
-
-}
-
-showResults = () => {
-
-}
-
-// display quiz right away
+// display quiz 
 buildQuiz();
 
 submitButton.addEventListener('click', showResults);
