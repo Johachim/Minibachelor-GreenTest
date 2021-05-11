@@ -8,13 +8,16 @@
 @import "node_modules/Bootstrap_v5/scss/mixins";
 @import "node_modules/Bootstrap_v5/scss/containers";
 @import "node_modules/Bootstrap_v5/scss/grid";
+@import "node_modules/Bootstrap_v5/scss/reboot";
 
 // Own styles
 // Global
 @import "variables";
 @import "fonts";
 @import "colours";
+@import "general";
 
 //Components
 @import "buttons";
 @import "forms";
+@import "beregner";

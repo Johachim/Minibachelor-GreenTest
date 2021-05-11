@@ -13,18 +13,33 @@
     <div class="container-fluid bg_dark_green">
         <div class="container madberegner">
             <h2 class="align_center colour_white">Prøv madberegneren og se hvor meget<br/> forskel dine valg kan gøre</h2>
-            <div class="row">
-                <div class="col-6">
-                    <select name="first" id="firstSelected"></select>
+            <form>
+                <div class="row">
+                    <div class="col-md-5 align_center">
+                        <select name="first" id="firstSelected"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="align_center colour_white">vs</h3>
+                    </div>
+                    <div class="col-md-5 align_center">
+                        <select name="second" id="secondSelected"></select>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <select name="second" id="secondSelected"></select>
+                <div class="row">
+                    <div class="col align_center">
+                        <input type="submit" value="Beregn" class="btn btn_light_green" id="beregnSubmit">
+                    </div>                    
                 </div>
+            </form>
+            <div class="row hidden" id="resultat">
+                <h2>empty</h2>
+                <p>empty</p>
             </div>
         </div>
     </div>
     <!-- ------------------------ Til hertil ----------------------------------  -->
 
-    <script src="../scripts/beregner.js"></script>
+    <script src="../scripts/classes/beregner_class.js" type="module"></script>
+    <script src="../scripts/beregner.js" type="module"></script>
 </body>
 </html>
