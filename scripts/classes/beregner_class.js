@@ -112,17 +112,17 @@ export default class Beregner{
 
                 let resultTemplate = `
                     <div class="row">
-                        <h3 class="colour_${first_colour} col-3">${madvarer[first].navn}</h3>
-                        <h3 class="colour_dark_grey align_center col-2">vs</h3>
-                        <h3 class="colour_${second_colour} col-3">${madvarer[second].navn}</h3>
+                        <h3 class="colour_${first_colour} col-md-3">${madvarer[first].navn}</h3>
+                        <h3 class="colour_dark_grey align_center col-md-2">vs</h3>
+                        <h3 class="colour_${second_colour} col-md-3">${madvarer[second].navn}</h3>
                     </div>
-                    <div class="col-8">
-                        <canvas id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></canvas>
+                    <div class="col-md-8">
+                        <canvas id="chartContainer" style="height: 370px; width: 100%; max-width: 500px; margin: 0px auto;"></canvas>
                     </div>
-                    <div class="col-4 align_center">
+                    <div class="col-md-4 align_center">
                         <p>${madvarer[first].navn}'s samlet<br/>klimaaftryk* er</p>
                         <h3 class="colour_${first_colour}">${procentResult.toFixed(2)}%</h3>
-                        <p><strong>${mm}</strong> end ${madvarer[second].navn}</p>
+                        <p><strong class="colour_${first_colour}">${mm}</strong> end ${madvarer[second].navn}</p>
                         <small>*Fødevarernes klimaaftryk fra produktion af 1 kg fødevare inklusiv alle led i fødevarekæden
                         (produktion, forarbejdning og transport) indtil varen ligger i supermarkedet</small>
                     </div>

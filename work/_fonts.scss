@@ -19,6 +19,7 @@ h2 {
 h3 {
 	font-family: $heading;
 	font-size: 2em;
+	padding-bottom: 0.8em;
 }
 
 h4 {
@@ -41,6 +42,11 @@ p {
 	font-family: $paragraph;
 	font-size: 12pt;
 	line-height: 2em;
+}
+
+small{
+	font-family: $paragraph;
+	font-size: 0.8em;
 }
 
 

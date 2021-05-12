@@ -1,0 +1,26 @@
+// Tips containere til forsiden
+.tip_contianer{
+    display: flex;
+    padding-bottom: 2.5em;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    .text-contianer{
+        padding-left: 1em;
+    }
+}
+
+// Header
+header{
+    background-color: $light_grey;
+    min-height: 50px;
+}
+
+// Footer
+footer{
+    margin-top: 2em;
+    background-color: $dark_grey;
+    color: white;
+    min-height: 100px;
+}

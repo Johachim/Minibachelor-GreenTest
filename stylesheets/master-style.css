@@ -1570,6 +1570,7 @@ h2 {
 h3 {
   font-family: "Varela Round", sans-serif;
   font-size: 2em;
+  padding-bottom: 0.8em;
 }
 
 h4 {
@@ -1592,6 +1593,11 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 12pt;
   line-height: 2em;
+}
+
+small {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
 }
 
 /* Links styles */
@@ -1686,6 +1692,14 @@ a {
   display: none;
 }
 
+.padding_top {
+  padding-top: 2em;
+}
+
+.padding_bottom {
+  padding-bottom: 2em;
+}
+
 .btn {
   padding: 0.7em 3em;
   font-family: "Montserrat", sans-serif;
@@ -1751,5 +1765,31 @@ form .row {
 #resultat {
   padding: 2em;
   background-color: white;
+}
+
+.tip_contianer {
+  display: flex;
+  padding-bottom: 2.5em;
+}
+
+.tip_contianer img {
+  width: 40px;
+  height: 40px;
+}
+
+.tip_contianer .text-contianer {
+  padding-left: 1em;
+}
+
+header {
+  background-color: #EEECDF;
+  min-height: 50px;
+}
+
+footer {
+  margin-top: 2em;
+  background-color: #393738;
+  color: white;
+  min-height: 100px;
 }
 /*# sourceMappingURL=master-style.css.map */
