@@ -45,7 +45,7 @@
             }
         });
         //what to do with answers?
-        resultsContainer.innerHTML = `Answers:...${numCorrect}`
+        resultsContainer.innerHTML = `Answers:...${numCorrect} (det her er bare placeholder)`
     }
     
     const quizContainer = document.getElementById('quizdiv');
