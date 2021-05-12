@@ -76,18 +76,39 @@ export default class Beregner{
                 let secondKlima = madvarer[second].klimaftryk + madvarer[second].import;
                 let first_colour = "";
                 let second_colour = "";
+                let first_bar_colour = "";
+                let second_bar_colour = "";
+                let small = 0;
+                let big =  0;
+                let mm = "";
 
-                //Define colours for text
+                //Define colours for text/chart and get relation
                 if(firstKlima < secondKlima){
                     first_colour = "primary_green";
                     second_colour = "dark_grey";
-                } else if (firstKlima > secondKlima){
+                    first_bar_colour = "#698F5D";
+                    second_bar_colour = "#393738";
+                    small = firstKlima;
+                    big = secondKlima;
+                    mm = "mindre";
+                } else if (firstKlima > secondKlima) {
                     first_colour = "dark_grey";
                     second_colour = "primary_green";
-                }else {
+                    first_bar_colour = "#393738";
+                    second_bar_colour = "#698F5D";
+                    small = secondKlima;
+                    big = firstKlima;
+                    mm = "mere";
+                } else {
                     first_colour = "dark_grey";
                     second_colour = "dark_grey";
+                    first_bar_colour = "#393738";
+                    second_bar_colour = "#393738";
+                    small = firstKlima;
+                    big = secondKlima;
+                    mm = "mindre";
                 }
+                let procentResult = (big - small) / big * 100;
 
                 let resultTemplate = `
                     <div class="row">
@@ -96,18 +117,49 @@ export default class Beregner{
                         <h3 class="colour_${second_colour} col-3">${madvarer[second].navn}</h3>
                     </div>
                     <div class="col-8">
-
+                        <canvas id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></canvas>
                     </div>
                     <div class="col-4 align_center">
-                        <p>${madvarer[first].navn}s samlet<br/>klimaaftryk* er</p>
-                        <h3 class="colour_${first_colour}"> %</h3>
-                        <p>end ${madvarer[second].navn}</p>
-                        <small>*Gælder kun importede fødevarer. Der lægges omkring 0.2 noget oven i pr fødevarer i transport</small>
+                        <p>${madvarer[first].navn}'s samlet<br/>klimaaftryk* er</p>
+                        <h3 class="colour_${first_colour}">${procentResult.toFixed(2)}%</h3>
+                        <p><strong>${mm}</strong> end ${madvarer[second].navn}</p>
+                        <small>*Fødevarernes klimaaftryk fra produktion af 1 kg fødevare inklusiv alle led i fødevarekæden
+                        (produktion, forarbejdning og transport) indtil varen ligger i supermarkedet</small>
                     </div>
                 `;
                 result.innerHTML = resultTemplate;
+                const ctx = document.querySelector('#chartContainer').getContext('2d')
+                const chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [madvarer[first].navn, madvarer[second].navn],
+                        datasets: [{
+                            label: "kg CO2-ækv. per kg fødevare",
+                            data: [firstKlima, secondKlima],
+                            backgroundColor: [
+                                first_bar_colour,
+                                second_bar_colour
+                            ]
+                        }]
+                        
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+                chart.render();
             });
         }
+        this.drawCanvas();
         this.result.classList.remove("hidden");
+    }
+
+    drawCanvas = function(){
+        console.log("HERE")
+        
     }
 }

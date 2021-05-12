@@ -3,9 +3,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheets/master-style.css" type="text/css" rel="stylesheets">
+    <style>
+        @import url('stylesheets/master-style.css');
+    </style>
     <title>Green Test</title>
 </head>
 <body>
+    <!-- ----------------------- Indsæt Header, tekst, quiz m.m her  --------------------------------  -->
+
+    <div class="container-fluid bg_dark_green">
+        <div class="container madberegner">
+            <h2 class="align_center colour_white">Prøv madberegneren og se hvor meget<br/> forskel dine valg kan gøre</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-5 align_center">
+                        <select name="first" id="firstSelected"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="align_center colour_white">vs</h3>
+                    </div>
+                    <div class="col-md-5 align_center">
+                        <select name="second" id="secondSelected"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col align_center">
+                        <input type="submit" value="Beregn" class="btn btn_light_green" id="beregnSubmit">
+                    </div>                    
+                </div>
+            </form>
+            <div class="row hidden" id="resultat">
+                <!-- Result interted by javascript here -->
+                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ Indsæt footer her ----------------------------------  -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script> <!-- Chart libery-->
+    <script src="scripts/classes/beregner_class.js" type="module"></script>
+    <script src="scripts/beregner.js" type="module"></script>
 </body>
 </html>

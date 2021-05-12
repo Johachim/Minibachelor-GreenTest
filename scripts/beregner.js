@@ -8,10 +8,8 @@ const result = document.querySelector('#resultat')
 const beregner = new Beregner(select1, select2, '../data/mad_data.json', submitbtn, result);
 beregner.setup();
 
-beregner.test();
-
 //Add EventListener for "Beregn" button
 submitbtn.addEventListener('click', function(){
     event.preventDefault();
     beregner.beregn();
-})
+});
