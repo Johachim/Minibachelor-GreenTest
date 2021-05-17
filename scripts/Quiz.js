@@ -35,17 +35,24 @@
             const userAnswer = (answerContainer.querySelector(selector) || {}).value;
             
             if(userAnswer === currentQuestion.correctAnswer){
-                //how to display "correct" answers?
-                numCorrect++;
+                numCorrect+=12.5;
                 
                 answerContainers[questionNumber].style.color = "green";
             }
+            else if(userAnswer === currentQuestion.correctAnswer2) {
+                numCorrect+=6;
+
+                answerContainers[questionNumber].style.color = "yellow"
+            }
             else{
-                answerContainers[questionNumber].style.color = "lightgrey";
+                answerContainers[questionNumber].style.color = "red";
             }
         });
-        //what to do with answers?
-        resultsContainer.innerHTML = `Answers:...${numCorrect} (det her er bare placeholder)`
+        resultsContainer.innerHTML = `<br/>
+        <h4>Din dagligdag er ${numCorrect}% grønt optimeret!</h4> 
+        <br/>
+        <p>Læs <a href="./Quiz_reasoning.html">her</a> for at se hvordan du kan gøre din hverdag grønnere!</p>
+        `
     }
     
     const quizContainer = document.getElementById('quizdiv');
@@ -53,7 +60,7 @@
     const submitButton = document.getElementById('submit');
     const quizQuestions = [
         {
-            question: "Bruger du primært en El bil eller en benzin/diesel bil (den bil der bruges oftest om du bliver kørt eller kører)?",
+            question: "Bruger du primært en El-bil eller en benzin/diesel bil (den bil der bruges oftest om du bliver kørt eller kører)?",
             answers: {
                 a: "Benzin",
                 b: "Diesel",
@@ -85,11 +92,53 @@
         question: "Hvor mange indendørs planter har du i din bolig?",
         answers: {
             a: "0",
-            b: "1-2 pr. person i boligen",
-            c: "3-4 pr. person i boligen",
-            d: "5+ pr. person i boligen"
+            b: "1-4 pr. person i boligen",
+            c: "5-8 pr. person i boligen",
+            d: "8+ pr. person i boligen"
         },
-        correctAnswer: "d"
+        correctAnswer: "d",
+        correctAnswer2: "c"
+    },
+    {
+        question: "Genbrug af affald. Vælg det svar der passer bedst for hvad du gør.",
+        answers: {
+            a: "Genbruger: Plastik, glas, tøj, metal, pap, papir, madaffald (kompost)",
+            b: "Genbruger: Tøj, Pap, papir, madaffald (kompost)",
+            c: "Genbruger: Papir, Madaffald (kompost)",
+            d: "Går ikke ud af min vej for at genbruge."
+        },
+        correctAnswer: "a",
+        correctAnswer2: "b"
+    },
+    {
+        question: "Slukker du lyset når du forlader et rum?",
+        answers: {
+            a: "Ja",
+            b: "Nej"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Hvis du griller hvordan foregår det så oftest?",
+        answers: {
+            a: "Kulgril",
+            b: "Gasgril",
+            c: "Griller ikke"
+        },
+        correctAnswer: "c",
+        correctAnswer2: "b"
+    },
+    {
+        question: "Bruger du genbrugelige genstande til daglig?",
+        answers: {
+            a: "Taske/Bærepose med til indkøb",
+            b: "Vandflaske til at drikke af",
+            c: "Genbrugelige klude/svampe til opvask",
+            d: "Alle de ovenstående",
+            e: "Ingen af de ovenstående"
+        },
+        correctAnswer: "d",
+        correctAnswer2: "a"
     }
 ];
 
