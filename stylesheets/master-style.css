@@ -1781,6 +1781,24 @@ form .row {
   padding-left: 1em;
 }
 
+.rounded_box {
+  border-radius: 5%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+.img_box {
+  padding: 0.5em 3em;
+  text-align: center;
+}
+
+.img_box img {
+  max-width: 400px;
+  height: auto;
+}
+
 header {
   background-color: #EEECDF;
   min-height: 50px;
