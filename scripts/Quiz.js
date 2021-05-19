@@ -29,9 +29,10 @@
     }
     
     showResults = () => {
+        let numCorrect = 0;
+        let responseString = ``;
         const answerContainers = quizContainer.querySelectorAll('.answers');
         
-        let numCorrect = 0;
         
         quizQuestions.forEach( (currentQuestion, questionNumber) => {
 
@@ -45,19 +46,28 @@
                 answerContainers[questionNumber].style.color = "green";
             }
             else if(userAnswer === currentQuestion.correctAnswer2) {
-                numCorrect+=6;
-
-                answerContainers[questionNumber].style.color = "darkgoldenrod"
+                numCorrect+=6.25;
             }
             else{
                 answerContainers[questionNumber].style.color = "firebrick";
             }
+            if(numCorrect === 100){
+                responseString = `Tillykke! Din dagligdag er helt grøn!`
+            }
+            if(numCorrect >= 60){
+                responseString = `Godt gået! Din dagligdag er meget grøn. For mere information om en grønnere dagligdag <a href="./index.html">tryk her</a>`
+            }
+            else{
+                responseString = `Ønsker du at gøre din dagligdag grønnere kan du evt. læse nogle tips & tricks <a href="./index.html">her</a>`
+            }
+            
         });
         resultsContainer.innerHTML = `<br/>
-        <h4>Din dagligdag er ${numCorrect}% grønt optimeret!</h4> 
+        <h4>Din dagligdag er ${numCorrect}% grønt optimeret!</h4>
+        <h4>${responseString}</h4> 
         <br/>
-        <p>Læs <a href="./Quiz_reasoning.html">her</a> for at se hvordan du kan gøre din hverdag grønnere!</p>
         `
+        //<p>Læs <a href="./Quiz_reasoning.html">her</a> for at se hvordan du kan gøre din hverdag grønnere!</p>
     }
     //DOM and questions
     const quizContainer = document.getElementById('quizdiv');
@@ -167,7 +177,6 @@
 
 // display quiz 
 buildQuiz();
-submitButton.addEventListener('click', showResults);
 
 
 //Pagination
@@ -192,6 +201,12 @@ showSlide = (n) => {
     else{
         nextButton.style.display = "inline-block";
     }
+    if(nextButton.style.display === "inline-block"){
+        submitButton.style.display = "none";
+    }
+    else{
+        submitButton.style.display = "inline-block";
+    }
 }
 
 showSlide(currSlide);
@@ -203,5 +218,6 @@ showPreviousSlide = () => {
     showSlide(currSlide - 1)
 }
 
+submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
