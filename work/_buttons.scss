@@ -31,6 +31,17 @@
     background-color: $primary_green;
 }
 
+.btn_dark_grey{
+    background-color: $dark_grey;
+    color: white;
+    border: none;
+    opacity: 0.7;
+}
+
+.btn_dark_grey:hover{
+    opacity: 0.4;
+}
+
 .btn_quiz_answer{
     border: solid $dark_grey 2px;
     color: $dark_grey;
