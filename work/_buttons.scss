@@ -53,3 +53,47 @@
     background-color: $dark_green;
     border: solid $dark_green 2px;
 }
+
+// Read more buttons
+.dropdown-readmore{
+    flex-direction: column;
+    background-color: white;
+    padding: 0.7em 1.5em;
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    h6{
+        color: $dark_green;
+    }
+    div{
+        margin: 0 auto;
+        .arrow{
+            border: solid $dark_green;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+            max-width: 100px;
+            max-height: 50px;
+        }
+
+        .down{
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .up{
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+    }
+}
+
+.dropdown-readmore:hover{
+    h6{
+        color: $light_green;
+    }
+    div .arrow{
+        border-color: $light_green;
+    }
+}

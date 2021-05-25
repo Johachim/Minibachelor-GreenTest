@@ -1,0 +1,15 @@
+.mobileShow{
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    /*.mobileHide{
+        height: 0;
+        overflow: hidden;
+        background-color: pink;
+    }*/
+
+    .mobileShow{
+        display: inherit;
+    }
+}

@@ -1793,6 +1793,51 @@ a {
   border: solid #355D3A 2px;
 }
 
+.dropdown-readmore {
+  flex-direction: column;
+  background-color: white;
+  padding: 0.7em 1.5em;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+.dropdown-readmore h6 {
+  color: #355D3A;
+}
+
+.dropdown-readmore div {
+  margin: 0 auto;
+}
+
+.dropdown-readmore div .arrow {
+  border: solid #355D3A;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.dropdown-readmore div .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown-readmore div .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.dropdown-readmore:hover h6 {
+  color: #A0B58A;
+}
+
+.dropdown-readmore:hover div .arrow {
+  border-color: #A0B58A;
+}
+
 form select {
   padding: 15px;
   color: #393738;
@@ -1857,5 +1902,20 @@ footer {
   background-color: #393738;
   color: white;
   min-height: 100px;
+}
+
+.mobileShow {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  /*.mobileHide{
+        height: 0;
+        overflow: hidden;
+        background-color: pink;
+    }*/
+  .mobileShow {
+    display: inherit;
+  }
 }
 /*# sourceMappingURL=master-style.css.map */
