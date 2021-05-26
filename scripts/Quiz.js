@@ -55,10 +55,10 @@
                 responseString = `Tillykke! Din dagligdag er helt grøn!`
             }
             if(numCorrect >= 60){
-                responseString = `Godt gået! Din dagligdag er meget grøn. For mere information om en grønnere dagligdag <a href="./index.html">tryk her</a>`
+                responseString = `Godt gået! Din dagligdag er meget grøn. For mere information om en grønnere dagligdag <a href="./Quiz_reasoning.html">tryk her</a>`
             }
             else{
-                responseString = `Ønsker du at gøre din dagligdag grønnere kan du evt. læse nogle tips & tricks <a href="./index.html">her</a>`
+                responseString = `Ønsker du at gøre din dagligdag grønnere kan du evt. læse nogle tips & tricks <a href="./Quiz_reasoning.html">her</a>`
             }
             
         });
